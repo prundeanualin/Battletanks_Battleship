@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>    
+  <!-- iaca commul de fitze-->
+    <title> 
+      Tank battle ship    
+    </title>    
+    <link rel="shortcut icon" href="photos/logo.png" type="image/png">
+    <meta http-equiv="Content-Type"      content="text/html; charset=iso-8859-1" />    
+    <meta http-egit quiv="content-language"  content="en" />    
+    <meta http-equiv="pragma"            content="no-cache" />    
+    <meta http-equiv="from"              content="marchidanfilip@yahoo.com" />    
+    <meta http-equiv="reply-to"          content="marchidanfilip@yahoo.com" />    
+    <meta name="author"                  content="M.F" />    
+    <meta name="copyright"               content="FDC" />            
+    <meta name="audience"                content="all" />    
+    <link type="text/css" rel="stylesheet" href="css/game.css" />
+    <script src="js/extensionRemover.js"></script>    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/jquery/jquery-ui.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/socket.js"></script>  
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript">
+    </script>
+
+  </head>  
+  <body>    
+    
+    <div id="pagina">
+      <div id="menu">           
+        <!-- Deschidere div meniu -->         
+        <div id="left_button">   
+            <ul>      
+                <li id="logo">
+                    <img src="photos/logo.png" width="20" height="20">
+                  </li>        
+                <li>            
+                  <a href="Splash.html"  class="animateLink">Home</a>            
+                </li>              
+                <li>            
+                  <a href="About.html"  class="animateLink">About and Rules</a>            
+                </li>                                               
+              </ul>     
+        </div>
+        
+       
+         <!-- Inchidere div meniu -->       
+      </div>
+      <div id="disconnected">
+        <p> YAIKES, YOU GOT DISCONNECTED</P>
+      </div>
+      <div id="lobby">
+        <div id="interactions">
+        <div id="panel">
+           <ul id="realtimeupdate">
+         
+        </ul>
+        </div>
+      </div>
+      <div id = "dynamic_panel">
+       
+        <form id="chat-form">
+            <input id="chat" placeholder="Type here">
+            <button id="talk">Say</button>
+        </form>
+      </div>
+    </div>
+      <div id="game_panel">
+        <div id="column1">
+          <img src="photos/gtank_x.png" id="img0" class="imgs">
+          <img src="photos/gtank_x.png" id="img1" class="imgs">
+          <img src="photos/gtank_x.png" id="img2" class="imgs">
+          <img src="photos/gtank_x.png" id="img3" class="imgs">
+          <img src="photos/gtank_x.png" id="img4" class="imgs">
+          </div>
+        <div id="column2" class="Grid">
+            <p id="coord">Coordinates of your grid</p>
+            <canvas id="board_grid" width="500" height="500">
+                Canvas not supported
+              </canvas>
+        </div>
+        <div id = "column3" class="Grid">
+            <canvas id="board_grid2" width="500" height="500">
+                Canvas not supported
+              </canvas>
+        </div>
+        </div>
+      </div>
+    </body>
+   <script>
+     $(function () {
+     $(".imgs").draggable({ 
+      appendTo: "body",
+      revert: "invalid",
+       grid: [50,50],
+        cursor: "move"});
+      // containment: $('#board_grid') });
+       initDroppable($("#board_grid"));
+
+         function initDroppable($elements) {
+        $elements.droppable({
+            activeClass: "ui-state-default",
+            hoverClass: "ui-drop-hover",
+            hoverClass: "ui-state-active",
+            drop: function( event, ui ) {
+                $( this )
+                    .addClass( "ui-state-highlight" )
+                    .find( "#battlecells" )
+                        .html( "Dropped!" );
+            }
+        });
+    }
+      });
+   </script>
+   <script src="js/game.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client/client.js"></script>  
+    <script src="js/rotatemydick.js"></script>
+    <!-- <script src="js/game.js"></script> -->
+    <script src="js/board.js"></script>
+    <!-- <script src="js/interactions.js"></script> -->
+    </html>

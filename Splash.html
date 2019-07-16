@@ -1,0 +1,88 @@
+<!DOCTYPE html >
+<html lang="en">  
+  <head>    
+    <title>Tank battle ship    
+    </title>    
+    <link rel="shortcut icon" href="photos/logo.png" type="image/png">
+    <meta http-equiv="Content-Type"      content="text/html; charset=iso-8859-1" />    
+    <meta http-egit quiv="content-language"  content="en" />    
+    <meta http-equiv="pragma"            content="no-cache" />    
+    <meta http-equiv="from"              content="marchidanfilip@yahoo.com" />    
+    <meta http-equiv="reply-to"          content="marchidanfilip@yahoo.com" />    
+    <meta name="author"                  content="M.F" />    
+    <meta name="copyright"               content="FDC" />            
+    <meta name="audience"                content="all" />    
+    <link type="text/css" rel="stylesheet" href="css/stiluri.css" />    
+    <script src="js/jquery-1.11.0.min.js"></script>
+	  <script src="js/lightbox.min.js"></script>  
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <script src="js/socket.js"></script>
+    <srcipt src="server.js"></srcipt>
+
+    <script language="javascript" type="text/javascript">
+      //JAVA SCRIPT CODE HERE
+    </script>
+    
+  </head>  
+  <body>    
+    <div id="pagina">
+      <div id="menu">           
+        <!-- Inchidere div buton_stanga -->         
+        <div id="left_button">          
+          <ul>
+              <li id="logo">
+                  <img src="photos/logo.png" width="20" height="20">
+                </li>               
+            <li>            
+              <a href="Splash.html" class="animateLink">Home</a>            
+            </li>              
+            <li>            
+              <a href="About.html" class="animateLink">About and Rules</a>            
+            </li>                                           
+          </ul>        
+        </div>              
+        <!-- Inchidere div buton_dreapta -->       
+      </div>
+      <div id="before_heading">
+        <h2 id="ut">Battle Tanks</h2>
+      </div>
+      <div id="before_heading2">
+        <h2>Epic Strategy Battle</h2>
+      </div>
+      <div id="big_panel" class="row">
+        <div id="left_panel" class="column">
+            <div id="cell1">
+              <h2 class="text1"> 1.Choose your commander</h2>
+            </div>
+            <div id="cell2">
+              <h2 class="text1">2.Place your tanks</h2>
+            </div>
+            <div id="cell3">
+              <h2 class="text1"> 3.Destroy enemy's tanks</h2>
+            </div>
+            <div id="cell4">
+              <h2 class="text1"> 4.Enjoy the game</h2>
+            </div>
+        </div>
+        <div id="center_panel" class="column">
+            <form  action="Choice.html"><button type="submit" class="ptype">Play
+            </button>
+          </form>
+        </div>
+        <div id="right_panel" class="column">
+          <span id="say"></span>
+          
+          <div id="message1">
+            <h3 class="text2" id=""> Users online: <h3 class="text2"id="connections">0</h3></h3>
+          </div>
+          <div id="message2">
+            <h3 class="text2"> Games ongoing</h3>
+          </div>
+        </div>
+      </div>
+    </div>          
+    <!-- Inchidere div pagina --> 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client/client_main.js"></script>  
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">  
+  <head>    
+  <!-- iaca commul de fitze-->
+    <title>Tank battle ship    
+    </title>    
+    <meta http-equiv="Content-Type"      content="text/html; charset=iso-8859-1" />    
+    <meta http-egit quiv="content-language"  content="en" />    
+    <meta http-equiv="pragma"            content="no-cache" />    
+    <meta http-equiv="from"              content="marchidanfilip@yahoo.com" />    
+    <meta http-equiv="reply-to"          content="marchidanfilip@yahoo.com" />    
+    <meta name="author"                  content="M.F" />    
+    <meta name="copyright"               content="FDC" />            
+    <meta name="audience"                content="all" />    
+    <link type="text/css" rel="stylesheet" href="css/german.css" />    
+    <script src="js/jquery-1.11.0.min.js"></script> 
+    
+    <!-- <script src="js/rotate.js"></script> -->
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/jquery/jquery-ui.js"></script>
+    <script src="js/grid/src/utils.js"></script>
+    <script language="javascript" type="text/javascript">
+    </script>
+    
+  </head>  
+  <body>    
+    <div id="pagina">
+      <div id="menu">           
+        <!-- Deschidere div meniu -->         
+        <div id="left_button">   
+            <ul>      
+                <li id="logo">
+                    <img src="photos/logo.png" width="20" height="20">
+                  </li>        
+                <li>            
+                  <a href="Splash.html"  class="animateLink">Home</a>            
+                </li>              
+                <li>            
+                  <a href="About.html"  class="animateLink">About and Rules</a>            
+                </li>                                               
+              </ul>          
+        </div>
+         <!-- Inchidere div meniu -->       
+        </div>
+        <div id="header_text">
+          <h2>Battletanks documentation</h2>
+        </div>
+        <div id="big_panel" class="row">
+           <div id="left_panel" class="column">
+            <div id="left_panelSPLIT" class="row">
+              <div id="infotext">
+                <h2 class="h2Text">Armies</h2>
+          </div>
+        
+              <div id="left_1" class="column2">
+                  <div id="infotext">
+                      <h2 class="h2Text">Germany</h2>
+                </div>
+                <div id="tanknames">
+                  <h2 id="name1">
+                    Karl Thor
+                  </h2>
+                  <h2 class="tnames">
+                    JagdTiger
+                  </h2>
+                  <h2 class="tnames">
+                    Tiger I
+                    </h2>
+                  <h2 class="tnames">
+                    Panther V
+                  </h2>
+                  <h2 class="tnames">
+                    Wiberlwind IV
+                  </h2>
+                </div>
+              </div>
+              <div id="left_2" class="column2">
+               
+                  <div id="tanknames2">
+                      <div id="infotext">
+                          <h2 class="h2Text">Russia</h2>
+                    </div>
+                      <h2 id="name1">
+                        ISU-152 
+                      </h2>
+                      <h2 class="tnames">
+                        IS-2
+                      </h2>
+                      <h2 class="tnames">
+                        KV-85
+                        </h2>
+                      <h2 class="tnames">
+                        T34/76
+                      </h2>
+                      <h2 class="tnames">
+                        T60 Light
+                      </h2>
+                    </div>
+                
+              </div>
+            </div>
+           
+           </div>
+           <div id="right_panel">
+            <div id="rulest">
+              Battleship rules:
+            </div>
+            <div id="rules">
+              <p class="rulesp">
+                Battleship is a guessing game for two players. It is played on ruled grids (paper or board) on which each players fleet of ships (including battleships) are marked. The locations of the fleets are concealed from the other player. Players alternate turns calling "shots" at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.
+              </p>
+              <p class="rulesp">
+                Battleship is known worldwide as a pencil and paper game which dates from World War I. It was published by various companies as a pad-and-pencil game in the 1930s, and was released as a plastic board game by Milton Bradley in 1967. The game has spawned electronic versions, video games, smart device apps and a film.
+              </p>
+              <p class="rulesp">
+                Our version of Battleship is called battletanks which uses the same concept and uses tanks instead of battleships, with the game logic being the same.
+              </p>
+              <p class="rulesp">
+                The tanks sizes in our case are the following:
+                <table id="classsize" class="rulesp">
+                  <thead>
+                    <tr>
+                      <td>Tank number</td>
+                      <td>Size</td>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>First</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                      <td>Second</td>
+                      <td>4</td>
+                    </tr>
+                  <tr>
+                      <td>Third</td>
+                      <td>3</td>
+                      </tr>
+                  <tr>
+                      <td>Fourth</td>
+                      <td>3</td>
+                        </tr>
+                  <tr>
+                      <td>Fifth</td>
+                      <td>5</td>
+                   </tr>
+                </table>
+              </p>
+              <p class="rulesp">
+                  Before play begins, each player secretly arranges their ships on their primary grid. Each ship occupies a number of consecutive squares on the grid, arranged either horizontally or vertically. The number of squares for each ship is determined by the type of the ship. The ships cannot overlap (i.e., only one ship can occupy any given square in the grid). The types and numbers of ships allowed are the same for each player. These may vary depending on the rules.
+              </p>
+              </div>
+           </div>
+           <div id="startbutton">
+              <form type=get action="game.html">
+                <input type=submit value="Start" id="sb">
+              </form>
+            </div>
+          </div>
+        </div>        
+    <!-- Inchidere div pagina --> 
+    <script src="js/interactions.js" ></script>
+    <!-- <script src="js/rotatemydick.js"></script> -->
+    <script src="js/test.js"></script>
+    <script src="js/board.js"></script>
+    
+  </body>
+</html>
